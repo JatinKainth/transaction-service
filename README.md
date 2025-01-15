@@ -31,7 +31,10 @@ Calculate the sum of the specified transaction and all its children
 1. Clone the repository
 2. Copy the configuration example to file name `config/credentials.toml`
 3. Update the database credentials in `config/credentials.toml`
-4. Run the database migrations (if any)
+4. Run the docker compose file to start the database on localhost:5432
+```bash
+docker compose up -d
+```
 5. Build and run the service:
 ```bash
 go run main.go
